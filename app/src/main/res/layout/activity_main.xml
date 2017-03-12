@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/activity_tab_fragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <q.rorbin.verticaltablayout.VerticalTabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:background="#fffffa"
+        android:visibility="visible"
+        app:indicator_color="#a9a9a9"
+        app:indicator_gravity="fill"
+        />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>
